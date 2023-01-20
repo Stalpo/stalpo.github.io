@@ -33,6 +33,7 @@ let win = false;
 
 // listeners
 playButton.addEventListener("click", startGame);
+canvas.addEventListener();
 
 // canvas vars
 canvas.width = window.innerWidth;
@@ -164,7 +165,7 @@ function move(){
     clearInterval(upI);
     upI = null;
     downI = setInterval(moveDown, 10);
-  }else if(event.keyCode == 32){
+  }else if(event.keyCode == 27){
     // to menu
     toMenu();
   }else if(event.keyCode == 69 || event.keyCode == 191){
@@ -337,6 +338,7 @@ function winCheck(){
 function toMenu(){
   document.removeEventListener('keydown', move);
   document.removeEventListener('keyup', stop);
+  canvas.style.zIndex = -1;
   context.fillStyle = "lightblue";
   context.fillRect(0, 0, window.innerWidth, window.innerHeight);
   menu.style.display = "block";
@@ -426,6 +428,7 @@ function powerUpCheck(){
 
 // starts the game from menu
 function startGame(){
+  canvas.style.zIndex = 5;
   paint = 0;
   paintMax = 0;
   zoom = 10;
