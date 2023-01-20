@@ -33,11 +33,11 @@ let win = false;
 
 // listeners
 playButton.addEventListener("click", startGame);
-canvas.addEventListener();
 
 // canvas vars
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+canvas.style.zIndex = -1;
 let zoom = 10;
 let tileSize = Math.ceil(window.innerHeight / zoom);
 let widthOffset = window.innerWidth - window.innerHeight;
