@@ -4,50 +4,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Random Maze Game</title>
+  <title>MrB: Random Maze Generator</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div id="menu">
-    <p id="titleThing">The Maze</p>
-    <h1 id="lastTime"></h1>
-    <button id="playButton">Play</button>
-    <p>Press play to start the game<br>Press space at any time to exit the game<br>Use the arrow keys or wasd to move<br>Press e or / to use paint<br>Change the size and mode with the input boxes<br>Select power ups with the checkboxes</p>
-    <input id="size" placeholder="Maze size" />
-    <input id="mode" placeholder="Mode" />
-    <div id="powerUpDiv">
-      <input type="checkbox" id="speedUp" name="powerUp" value="speedUp">
-      <label for="speedUp"> Speed power up</label><br>
-      <input type="checkbox" id="sightUp" name="powerUp" value="sightUp">
-      <label for="sightUp"> Sight power up</label><br>
-      <input type="checkbox" id="paintUp" name="powerUp" value="paintUp">
-      <label for="paintUp"> Paint power up</label><br>
-      <input type="checkbox" id="rockUp" name="powerUp" value="rockUp">
-      <label for="rockUp"> ??? power up</label><br>
+  <div class="column">
+    <h1>Random Maze Generator</h1>
+    <h2>by Mr Bones Studio</h2>
+    <div class="gamediv">
+      <div id="menu">
+        <p id="titleThing">The Maze</p>
+        <h1 id="lastTime"></h1>
+        <button id="playButton">Play</button><br>
+        <input id="size" placeholder="Maze size" />
+        <input id="mode" placeholder="Mode" />
+        <div id="powerUpDiv">
+          <input type="checkbox" id="speedUp" name="powerUp" value="speedUp">
+          <label for="speedUp"> Speed power up</label><br>
+          <input type="checkbox" id="sightUp" name="powerUp" value="sightUp">
+          <label for="sightUp"> Sight power up</label><br>
+          <input type="checkbox" id="paintUp" name="powerUp" value="paintUp">
+          <label for="paintUp"> Paint power up</label><br>
+          <input type="checkbox" id="rockUp" name="powerUp" value="rockUp">
+          <label for="rockUp"> ??? power up</label><br>
+        </div>
+        <h1>Modes</h1>
+        <p>Normal - one round in set size<br>Levels - infinite levels increasing size each time</p>
+      </div>
+      <div id="win">
+        <h2 id="winText">You Win!</h2>
+      </div>
+      <div id="rockDiv">
+        <img id="rock" src="images/rock.jpg">
+        <img id="rock0" src="images/rock0.jpg">
+        <img id="rock1" src="images/rock1.jpg">
+        <img id="rock2" src="images/rock2.jpg">
+        <img id="rock3" src="images/rock3.jpg">
+        <img id="rock4" src="images/rock4.jpg">
+        <img id="rock5" src="images/rock5.jpg">
+        <img id="rock6" src="images/rock6.jpg">
+        <img id="rock7" src="images/rock7.jpg">
+        <img id="rock8" src="images/rock8.jpg">
+        <img id="rock9" src="images/rock9.jpg">
+        <img id="rock10" src="images/rock10.jpg">
+      </div>
+      <canvas id="gameScreen"></canvas>
+      <script type="module" src="source/main.js"></script>
     </div>
-    <h1>Modes</h1>
-    <p>Normal - one round in set size<br>Levels - infinite levels increasing size each time</p>
+    <br><a href="https://mrbones.netlify.app/">Back to home page</a><br><br>
+    <h2>Controls:</h2>
+    <p>Press play to start the game<br>Press space at any time to exit the game<br>Use the arrow keys or wasd to move<br>Press e or / to use paint<br>Change the size and mode with the input boxes<br>Select power ups with the checkboxes</p>
+    <h2>Description:</h2>
+    <p>maze generator with some funny power ups made by mr bones.</p>
   </div>
-  <div id="win">
-    <h2 id="winText">You Win!</h2>
-  </div>
-  <div id="rockDiv">
-    <img id="rock" src="images/rock.jpg">
-    <img id="rock0" src="images/rock0.jpg">
-    <img id="rock1" src="images/rock1.jpg">
-    <img id="rock2" src="images/rock2.jpg">
-    <img id="rock3" src="images/rock3.jpg">
-    <img id="rock4" src="images/rock4.jpg">
-    <img id="rock5" src="images/rock5.jpg">
-    <img id="rock6" src="images/rock6.jpg">
-    <img id="rock7" src="images/rock7.jpg">
-    <img id="rock8" src="images/rock8.jpg">
-    <img id="rock9" src="images/rock9.jpg">
-    <img id="rock10" src="images/rock10.jpg">
-  </div>
-  <canvas id="gameScreen"></canvas>
-  <script type="module" src="source/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+body{
+    background-color: lightblue;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.column{
+    background-color: gray;
+    border-radius: 25px;
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.gamediv{
+    background-color: lightgray;
+    border-radius: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 0px auto;
+}

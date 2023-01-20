@@ -13,9 +13,7 @@ body{
 }
 
 #menu{
-  position: absolute;
-  top: 10px;
-  left: 100px;
+  position: static;
   z-index: 2;
 }
 
