@@ -441,6 +441,7 @@ function startGame(){
   modeCheck();
   menu.style.display = "none";
   winThing.style.display = "none";
+  winThing.style.zIndex = 6;
   if(isInt(sizeInput.value)){
     if(sizeInput.value < 5){
       newMaze(5);
