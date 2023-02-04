@@ -6,7 +6,8 @@ body{
 }
 
 .column{
-    background-color: gray;
+    background-color: #050505;
+    color: #ffffff;
     border-radius: 25px;
     padding: 20px;
     width: 60%;
