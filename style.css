@@ -15,7 +15,8 @@ body{
 }
 
 .gamediv{
-    background-color: #222222;
+    background-color: #111111;
+    color: white;
     border-radius: 0px;
     padding: 0px;
     width: 100%;
