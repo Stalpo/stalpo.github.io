@@ -6,7 +6,7 @@ body{
 }
 
 .column{
-    background-color: #eeeeee;
+    background-color: gray;
     border-radius: 25px;
     padding: 20px;
     width: 60%;
@@ -15,7 +15,7 @@ body{
 }
 
 .gamediv{
-    background-color: lightgray;
+    background-color: #dddddd;
     border-radius: 0px;
     padding: 0px;
     width: 100%;
