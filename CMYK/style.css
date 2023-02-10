@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  font-size: 0;
+  min-width: 500px;
+    font-family: 'Courier New';
+}
+#title {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.box {
+  display: inline-block;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+}
+[id ='0'] {
+  opacity: 25%;
+}
+.text {
+  font-size: 20px;
+  margin-top: 20px;
+}
